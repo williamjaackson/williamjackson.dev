@@ -99,7 +99,7 @@ export const ContactForm = () => {
             <button className="w-fit px-8 bg-primary text-yellow-900 hover:text-white text-xl py-2 rounded-md mt-4 hover:bg-yellow-700 disabled:bg-gray-300 disabled:text-gray-600 disabled:cursor-not-allowed" disabled={loading}>
             {
                 loading 
-                ? <div className="my-2 rounded-full w-6 h-6 border-4 border-gray-600 border-t-white animate-spin"></div>
+                ? <div className="my-2 rounded-full w-6 h-6 border-4 border-gray-600 border-t-gray-300 animate-spin"></div>
                 : "Send Email"
             }
             </button>
