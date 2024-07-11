@@ -1,5 +1,6 @@
 import { Abril_Fatface } from "next/font/google";
 import Image from "next/image";
+import { ContactForm } from "../components/ContactForm";
 
 const abril_fatface = Abril_Fatface({ weight: "400", preload: false });
 
@@ -62,39 +63,7 @@ export default function Home() {
                     <span className="inline md:hidden"> me</span>
                 </h2>
                 <p className="md:text-xl text-slate-800 mt-4">Have a question or want to get in touch? Fill out the form below and I'll get back to you as soon as possible.</p>
-                <form className="grid mt-4">
-                    <h3 className="text-2xl md:text-3xl text-yellow-900 font-bold">Contact Details</h3>
-                    <div className="grid gap-2">
-                        <div className="grid">
-                            <label htmlFor="name" className="text-lg text-slate-500">Full Name
-                                <span className="text-red-500"> *</span>
-                            </label>
-                            <input type="text" id="name" className="border border-gray-300 p-2 rounded-md" placeholder="What should I call you?"/>
-                        </div>
-                        <div className="grid">
-                            <label htmlFor="email" className="text-lg text-slate-500">Email Address
-                                <span className="text-red-500"> *</span>
-                            </label>
-                            <input type="email" id="email" className="border border-gray-300 p-2 rounded-md" placeholder="What email address can I reach you at?"/>
-                        </div>
-                    </div>
-                    <h3 className="text-2xl md:text-3xl mt-4 text-yellow-900 font-bold">Message</h3>
-                    <div className="grid gap-2">
-                        <div className="grid">
-                            <label htmlFor="message" className="text-lg text-slate-500">Subject
-                                <span className="text-red-500"> *</span>
-                            </label>
-                            <input type="text" id="subject" className="border border-gray-300 p-2 rounded-md" placeholder="What is your message about?"/>
-                        </div>
-                        <div className="grid">
-                            <label htmlFor="message" className="text-lg text-slate-500">Content
-                                <span className="text-red-500"> *</span>
-                            </label>
-                            <textarea id="message" className="border border-gray-300 p-2 rounded-md h-32" placeholder="What would you like to say?"/>
-                        </div>
-                    </div>
-                    <button className="w-fit px-8 bg-primary text-yellow-900 hover:text-white text-xl py-2 rounded-md mt-4 hover:bg-yellow-700">Send Email</button>
-                </form>
+                <ContactForm />
             </div>
         </section>
         {/* footer */}
